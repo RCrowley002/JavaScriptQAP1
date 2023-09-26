@@ -6,6 +6,7 @@ const app = express();
 
 // Define a route that responds with "Hello, Express!"
 app.get("/", (req, res) => {
+  console.log("Received a GET request to the root URL");
   res.send("Hello, Express!");
 });
 
